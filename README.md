@@ -32,7 +32,7 @@ ExternalServiceTwoController - returns data after 5 seconds (mocked the wait on 
 
 Test Scenarios: 
 
- Timeout      | Response Time Service 1 | Response Time Service 2 |Response Time Expected | Result expected |
+ Hystrix Thread Timeout      | Response Time Service 1 | Response Time Service 2 |Response Time Expected | Result expected |
 ------------- | ----------------------- |-----------------------  |-----------------------|-----------------|
 6000 ms       | 2000 ms            |5000 ms |5000 ms     |Data from service 1 & 2
 4000  ms     | 2000 ms            | 5000 ms |4000 ms  | Data from service 1 only
