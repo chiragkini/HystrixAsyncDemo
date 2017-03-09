@@ -23,7 +23,7 @@ This is Spring boot project. Import the project in eclipse or sts.
 For detailed explaination on Hystrix check : https://github.com/Netflix/Hystrix/wiki/How-To-Use
 
 ##Explaination 
-This is project We have two rest controllers ExternalServiceOneController and ExternalServiceTwoController which we are consifdering as two texternal services whose data will be combined by our service named MyService.
+This is project We have two rest controllers ExternalServiceOneController and ExternalServiceTwoController which we are considering as two external services whose data will be combined by our service named MyService.
 
 We also have our rest endpoint 'getStatesList' which calls MyService which in turn return the combine data.
 
