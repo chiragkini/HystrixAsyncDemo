@@ -6,7 +6,7 @@ In microservice architecture we often have to get data from various sources such
 Lets take a scenario where you need to fetch data from multiple sources and combine into single result and return to the caller.
 Eg. We have GetMyDataService which calls below services:
 - Service 1 ---> get data from webservices mywebservice.com (Response time 10 Secs , timeout 15 secs)
-- Service 2 ---> get data from some third party api, www.free.com/api/getData (Response time 5 secs, timeout 15 secs)
+- Service 2 ---> get data from some third party api, https://reqres.in/ (Response time 5 secs, timeout 15 secs)
 - Service 3 ---> get data from one of your own microservice /myMicroservice/api/getData (Response time 1 secs, timeout 15 secs)
 
 So in synchronous mode GetMyDataService will take atleast 10 + 5 + 1 = 16 secs even if the all three services are running properly. Lets say 
